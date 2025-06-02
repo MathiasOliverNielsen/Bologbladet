@@ -16,3 +16,99 @@
   --main-font-family: Quicksand, sans-serif;
   --heading-font-family: "Bodoni Moda", serif;
 }
+
+/* Body Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--main-font-family);
+  background-color: var(--bg-color);
+  color: var(--nm-text-color);
+}
+/* Global img styleing */
+img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}
+/* #region h1 - h6 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-text-color);
+  font-family: var(--heading-font-family);
+  margin: 0.5rem 0;
+}
+/* #endregion */
+/* #region Nav Styleing */
+nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-bottom: 4rem;
+}
+.BoligBladetLogo {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 69px;
+  height: 40px;
+  background: transparent url("img/BoligBladetLogo-707070.png") 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.BoligBladetMenu {
+  position: absolute;
+  top: 22px;
+  left: 325px;
+  width: 23px;
+  height: 15px;
+}
+/* #endregion */
+
+/* #region Header Styling */
+header {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+header img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+header h1 {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  /* UI Properties */
+  font-family: var(--heading-font-family bold);
+  font-weight: 550;
+  color: var(--layerd-text-color);
+  opacity: 1;
+  font-size: 30px;
+}
+header button {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 165px;
+  height: 40px;
+  /* UI Properties */
+  text-align: center;
+  letter-spacing: 1.2px;
+  color: var(--layerd-text-color);
+  text-transform: uppercase;
+  background-color: var(--heading-text-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 2;
+}
+/* #endregion */
