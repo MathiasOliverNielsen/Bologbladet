@@ -1,3 +1,4 @@
+// JavaScript for the image slideshow
 let slideIndex = 1;
 let autoSlideTimeout;
 
@@ -44,7 +45,7 @@ function startAutoSlide() {
     slideIndex++;
     showSlides(slideIndex);
     startAutoSlide();
-  }, 10000); // every 10 seconds
+  }, 10000000); // every 10 seconds
 }
 // Start the slideshow
 showSlides(slideIndex);

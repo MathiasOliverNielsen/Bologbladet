@@ -63,7 +63,9 @@
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
           </div>
-          <caption>LIVINGROOM</caption>
+          <caption>
+            LIVINGROOM
+          </caption>
         </div>
         <div class="mySlides fade">
           <div class="numbertext"><h3>2 / 3</h3></div>
@@ -73,7 +75,9 @@
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
           </div>
-          <caption>KOKKENET</caption>
+          <caption>
+            KOKKENET
+          </caption>
         </div>
         <div class="mySlides fade">
           <div class="numbertext"><h3>3 / 3</h3></div>
@@ -83,12 +87,34 @@
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
           </div>
-          <caption>OUTSIDE AREA</caption>
+          <caption>
+            OUTSIDE AREA
+          </caption>
         </div>
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </section>
-      <section id="subscripeForm"></section>
+      <section id="subscripeForm">
+        <h2>Abonnér på vores online magasin</h2>
+        <h3>Og spar op til 379 kr</h3>
+        <h4>Når du udfylder formularen, får du fakturaen tilsendt på mail. Husk at tjekke dit spamfilter!</h4>
+        <form action="#">
+          <label for="fullname">Fulde navn</label>
+          <input type="text" id="fullname" name="fullname" required />
+
+          <label for="email">Mail</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="subscriptionTime">Antal Måneder</label>
+          <select id="subscriptionTime" name="subscriptionType" required>
+            <option value="">Vælg en mulighed</option>
+            <option value="1">1 Måned</option>
+            <option value="2">2 Måneder</option>
+            <option value="3">3 Måneder</option>
+          </select>
+          
+        </form>
+      </section>
     </main>
     <!-- #endregion -->
     <!-- #region GLOBAL FOOTER -->
