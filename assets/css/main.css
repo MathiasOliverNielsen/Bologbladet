@@ -1,2 +1,18 @@
+/* Imported CSS Styles */
 @import url(reset.css);
 @import url(Full-Page_Grid-Areas.css);
+/* IMported Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap");
+
+/* Imported Icons */
+
+/* Root Values */
+:root {
+  --bg-color: #ffffff;
+  --layerd-text-color: #ffffff;
+  --nm-text-color: #707070;
+  --heading-text-color: #e79899;
+  --main-font-family: Quicksand, sans-serif;
+  --heading-font-family: "Bodoni Moda", serif;
+}
