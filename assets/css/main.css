@@ -19,8 +19,6 @@
 
 /* Body Styles */
 body {
-  margin: 0;
-  padding: 0;
   font-family: var(--main-font-family);
   background-color: var(--bg-color);
   color: var(--nm-text-color);
@@ -78,11 +76,13 @@ header {
 header img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 800px;
+  object-fit: cover;
+  object-position: 70% 100%;
 }
 header h1 {
   position: absolute;
-  top: 35%;
+  top: 56%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80%;
@@ -95,20 +95,24 @@ header h1 {
 }
 header button {
   position: absolute;
-  top: 80%;
+  top: 67%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 165px;
-  height: 40px;
+  height: 30px;
   /* UI Properties */
   text-align: center;
   letter-spacing: 1.2px;
+  font-size: 12px;
   color: var(--layerd-text-color);
   text-transform: uppercase;
   background-color: var(--heading-text-color);
   border: none;
-  border-radius: 4px;
   cursor: pointer;
-  z-index: 2;
+  /* z-index: 2; */
 }
+/* #endregion */
+
+/* #region Main Content */
+
 /* #endregion */

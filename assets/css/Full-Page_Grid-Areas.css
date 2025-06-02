@@ -27,7 +27,7 @@ body {
 /* #region Header, Nav, Main, Footer */
 header {
   grid-area: header;
-  color: var(--text-light);
+  /* color: var(--text-light); */
   text-align: center;
 }
 
@@ -38,14 +38,14 @@ nav {
 
 main {
   grid-area: main;
-  background-color: var(--main-bg);
-  color: var(--text-light);
+  /* background-color: var(--main-bg); */
+  /* color: var(--text-light); */
 }
 
 footer {
   grid-area: footer;
-  background-color: var(--footer-bg);
-  color: var(--text-light);
+  /* background-color: var(--footer-bg);
+  color: var(--text-light); */
   text-align: center;
 }
 
