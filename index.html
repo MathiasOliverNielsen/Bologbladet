@@ -21,19 +21,44 @@
     </nav>
     <!-- #endregion -->
     <!-- #region GLOBAL HEADER -->
-    <header id="MainHeader">
-      <img src="assets/images/slider1.jpg" alt="Hero img room" />
-      <h1>
-        Dit foretrukne online
-        <br />
-        boligmagasin
-      </h1>
-      <button>LÆS MERE</button>
+    <header id="mainHeader">
+      <div class="mySlides fade">
+        <div class="numbertext"><h3>1 / 3</h3></div>
+        <img src="assets/images/slider1.jpg" alt="Slider Img One" />
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <caption>LIVINGROOM</caption>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext"><h3>2 / 3</h3></div>
+        <img src="assets/images/slider2.jpg" alt="Slider Img Two" />
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <caption>KOKKENET</caption>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext"><h3>3 / 3</h3></div>
+        <img src="assets/images/slider3.jpg" alt="Slider Img Three" />
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <caption>OUTSIDE AREA</caption>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </header>
     <!-- #endregion -->
     <!-- #region GLOBAL MAIN CONTENT -->
     <main>
-      <!-- BoligIndretning Section: Inspiration til boligindretning med billeder og knap -->
+      <!-- #region BoligIndretning Section: Inspiration til boligindretning med billeder og knap -->
       <section id="boligIndretning">
         <h3>Søger du</h3>
         <h2>inspiration til boligindretning?</h2>
@@ -55,52 +80,21 @@
         </figure>
         <button>Se Alle Rum</button>
       </section>
-      <!-- Ugens Mest Læste Slideshow Section: Viser de mest læste artikler i et slideshow -->
-      <section id="ugensMestLæsteSlideshowContainer">
-        <div class="mySlides fade">
-          <div class="numbertext"><h3>1 / 3</h3></div>
-          <img src="assets/images/slider1.jpg" alt="Slider Img One" />
-          <div style="text-align: center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-          </div>
-          <caption>LIVINGROOM</caption>
-        </div>
-        <div class="mySlides fade">
-          <div class="numbertext"><h3>2 / 3</h3></div>
-          <img src="assets/images/slider2.jpg" alt="Slider Img Two" />
-          <div style="text-align: center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-          </div>
-          <caption>KOKKENET</caption>
-        </div>
-        <div class="mySlides fade">
-          <div class="numbertext"><h3>3 / 3</h3></div>
-          <img src="assets/images/slider3.jpg" alt="Slider Img Three" />
-          <div style="text-align: center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-          </div>
-          <caption>OUTSIDE AREA</caption>
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </section>
-      <!-- Abonnement Formular Section: Brugere kan abonnere på magasinet -->
+      <!-- #endregion -->
+      <!--  #region Ugens Mest Læste Slideshow Section: Viser de mest læste artikler i et slideshow -->
+
+      <!-- #endregion -->
+      <!-- #region Abonnement Formular Section: Brugere kan abonnere på magasinet -->
       <section id="subscripeForm">
         <h2>Abonnér på vores online magasin</h2>
         <h3>Og spar op til 379 kr</h3>
         <h4>Når du udfylder formularen, får du fakturaen tilsendt på mail. Husk at tjekke dit spamfilter!</h4>
-        <form action="#">
+        <form novalidate onsubmit="submitForm(event) " id="subscriptionForm">
           <label for="fullname">Fulde navn</label>
-          <input type="text" id="fullname" name="fullname" required />
+          <input id="fullName" name="fullname" placeholder="Indtast dit fulde navn" required />
 
           <label for="email">Mail</label>
-          <input type="email" id="email" name="email" required />
+          <input type="email" id="email" name="email" placeholder="Indtast din Email" required />
 
           <label for="subscriptionTime">Antal Måneder</label>
           <select id="subscriptionTime" name="subscriptionType" required>
@@ -109,18 +103,23 @@
             <option value="2">2 Måneder</option>
             <option value="3">3 Måneder</option>
           </select>
-          <button>KØB ABONNEMENT</button>
+          <button type="submit" value="submit">KØB ABONNEMENT</button>
         </form>
       </section>
+      <!-- #endregion -->
     </main>
     <!-- #endregion -->
     <!-- #region GLOBAL FOOTER -->
     <footer id="MainFooter">
       <h3>KONTAKT OS</h3>
       <p>
-        TELEFON +45 23 54 76 78
+        TELEFON
         <br />
-        EMAIL INFO@INFO.DK
+        +45 23 54 76 78
+        <br />
+        EMAIL
+        <br />
+        INFO@INFO.DK
       </p>
       <nav id="footerNav">
         <h3>INFORMATION</h3>
